@@ -1,0 +1,21 @@
+# Baseline advisor settings. WATCHDOG.yml entries override reviewMode and
+# syncBacklog; continueSeverity/immuneTurns still apply to them. The only
+# advisor is the per-turn early-blocker, so the baseline is turn/off/blocker.
+advisor:
+  reviewMode: turn
+  syncBacklog: "off"
+  continueSeverity: blocker
+  immuneTurns: 0
+  reviewInterval: 1
+  maxNotesPerUpdate: 16
+
+task:
+  batch: true
+  structured: false
+  maxRecursionDepth: 2
+  maxConcurrency: 8
+  agentSoftRequestBudget:
+    improver: 400
+
+tools:
+  xdev: true

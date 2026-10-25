@@ -1,0 +1,9 @@
+# Project repo ignores the separate memory repo, per-run operational data and the
+# vendored harness binary.
+memory/
+runs/
+.worktrees/
+node_modules/
+.obsidian/
+bin/omp
+*.tmp
